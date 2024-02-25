@@ -1,0 +1,16 @@
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.animate__animated.animate__fadeIn {
+    animation-duration: 2s;
+}
