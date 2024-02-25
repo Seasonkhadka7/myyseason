@@ -1,81 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Under Construction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        p {
-            font-size: 1.125rem;
-            margin-bottom: 1rem;
-        }
-        .launch-date {
-            font-size: 1rem;
-            color: #666;
-        }
-        .features {
-            list-style-type: none;
-            padding: 0;
-        }
-        .features li {
-            font-size: 1.125rem;
-            margin-bottom: 0.5rem;
-        }
-        .signup-form {
-            margin-top: 2rem;
-        }
-        .signup-form input[type="email"] {
-            width: 100%;
-            padding: 0.5rem;
-            margin-bottom: 1rem;
-        }
-        .signup-form button {
-            background-color: #007bff;
-            color: #fff;
-            padding: 0.5rem 1rem;
-            border: none;
-            cursor: pointer;
-        }
-        .signup-form button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+	<title>Under Construction</title>
+	<style>
+		body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+			animation: gradient 3s ease infinite;
+		}
+
+		@keyframes gradient {
+			0% {background-position: 0% 50%;}
+			50% {background-position: 100% 50%;}
+			100% {background-position: 0% 50%;}
+		}
+
+		.container {
+			background-color: rgba(255, 255, 255, 0.8);
+			padding: 2rem;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 2rem;
+			margin-bottom: 1rem;
+			color: #333;
+			animation: fadeIn 1s ease;
+		}
+
+		p {
+			font-size: 1.125rem;
+			margin-bottom: 1rem;
+			color: #333;
+			animation: fadeIn 1s ease 0.2s;
+		}
+
+		.signup-form {
+			margin-top: 2rem;
+			animation: fadeIn 1s ease 0.4s;
+		}
+
+		.signup-form input[type="email"] {
+			width: 100%;
+			padding: 0.5rem;
+			margin-bottom: 1rem;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
+
+		.signup-form button {
+			background-color: #333;
+			color: #fff;
+			padding: 0.5rem 1rem;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.signup-form button:hover {
+			background-color: #444;
+		}
+
+		@keyframes fadeIn {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <h1>Under Construction</h1>
-        <p>Our website is currently under construction. We expect to launch in:</p>
-        <p class="launch-date">2024</p>
-        <p>In the meantime, here are some features you can expect on the completed website:</p>
-        <ul class="features">
-            <li>Profile</li>
-            <li>Blogs</li>
-            <li>Poems</li>
-        </ul>
-        <div class="signup-form">
-            <input type="email" placeholder="Enter your email for updates">
-            <button>Sign Up</button>
-        </div>
-    </div>
+	<div class="container">
+		<h1>Our Website is Under Construction</h1>
+		<p>We're working hard to bring you an amazing website. Please check back soon!</p>
+		<form class="signup-form">
+			<input type="email" placeholder="Enter your email address">
+			<button type="button" onclick="location.reload();">Sign Up</button>
+		</form>
+	</div>
 </body>
 </html>
